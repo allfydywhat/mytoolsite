@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Free Online Tasbih Counter – Fast, Simple & Auto Save</title>
+    <meta name="description" content="Use our free online tasbeeh counter for PC & mobile. Ideal dhikr counter with auto-save, reset, and easy tap. Start your tasbih now.">
+    <meta name="keywords" content="tasbih counter, tasbeeh counter, dhikr counter, online tasbih, digital tasbih, islamic counter">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="freetasbihcounter.online">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Online Tasbih Counter – Fast, Simple & Auto Save">
+    <meta property="og:description" content="Use our free online tasbeeh counter for PC & mobile. Ideal dhikr counter with auto-save, reset, and easy tap. Start your tasbih now.">
+    <meta property="og:url" content="https://freetasbihcounter.online">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Free Online Tasbih Counter – Fast, Simple & Auto Save">
+    <meta property="twitter:description" content="Use our free online tasbeeh counter for PC & mobile. Ideal dhikr counter with auto-save, reset, and easy tap. Start your tasbih now.">
+    
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Google Analytics placeholder -->
+    <!-- Replace with your Google Analytics tracking code -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+    
+    <!-- Google Search Console verification placeholder -->
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE"> -->
+    
+    <!-- Google AdSense placeholder -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXX" crossorigin="anonymous"></script> -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Free Online Tasbih Counter</h1>
+            <div class="header-line"></div>
+        </header>
+        
+        <main>
+            <div class="counter-container">
+                <div class="counter-display">
+                    <div id="counter-number">0</div>
+                    <div class="counter-label">Count</div>
+                </div>
+
+                <div class="control-buttons">
+                    <button id="decrease-btn" class="btn-control" onclick="decreaseCount()" aria-label="Decrease count">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </button>
+
+                    <button id="reset-btn" class="btn-control" onclick="showResetDialog()" aria-label="Reset counter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="1 4 1 10 7 10"></polyline>
+                            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <button id="tap-btn" onclick="increaseCount()" aria-label="Increment count">
+                    TAP
+                </button>
+
+                <div class="auto-save-indicator">
+                    <div class="save-dot"></div>
+                    <span>Auto-saved</span>
+                </div>
+            </div>
+            
+            <section class="about-section">
+                <h2>About</h2>
+                <p>
+                    Welcome to our <strong>online tasbih counter</strong> – your go-to digital tool for daily <strong>dhikr</strong> and remembrance. This <strong>tasbeeh counter for PC free</strong> requires no download and works instantly on any device, whether mobile, tablet, or desktop.
+                </p>
+                <p>
+                    With our modern and simple design, the <strong>tasbih counter online</strong> is easy to use. Tap the "TAP" button to increase your count, use the "Decrease" button to go back one, and "Reset" to start fresh – with a confirmation for safety. Your progress is automatically saved, so you can always continue your <strong>tasbeeh</strong> where you left off.
+                </p>
+                <p>
+                    Whether you're using it as a <strong>dhikr counter</strong> or for general <strong>tasbeeh</strong>, this tool offers an uninterrupted spiritual experience – anytime, anywhere. Try our <strong>onlinetasbih</strong> platform now and make your <strong>tasbeeh counter</strong> experience more effective and convenient than ever.
+                </p>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💾</div>
+                        <h3>Auto-Save</h3>
+                        <p>Your count is automatically saved</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive</h3>
+                        <p>Works on all devices</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🚀</div>
+                        <h3>Fast & Simple</h3>
+                        <p>No downloads required</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="footer-content">
+                <div>Made by <span class="brand">freetasbihcounter.online</span></div>
+                <div class="copyright">© 2025 Free Tasbih Counter. All rights reserved.</div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Reset Confirmation Dialog -->
+    <div id="reset-dialog" class="dialog-overlay" style="display: none;">
+        <div class="dialog-box">
+            <h3>Confirm Reset</h3>
+            <p>Are you sure you want to reset the counter to 0?</p>
+            <div class="dialog-buttons">
+                <button onclick="cancelReset()" class="btn-cancel">Cancel</button>
+                <button onclick="confirmReset()" class="btn-confirm">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
