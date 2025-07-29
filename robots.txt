@@ -1,9 +1,7 @@
-URL :
-User-agent: *
-Ligne 1
-URL :
-Disallow:
-Ligne 2
-URL :
+User-agent: Googlebot
+
+Disallow: 
+
+User-agent: googlebot-image
+
 Sitemap: https://freetasbihcounter.online/sitemap.xml
-Ligne 4
