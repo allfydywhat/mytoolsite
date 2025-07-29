@@ -1,5 +1,8 @@
-User-agent: *
+User-agent: Mediapartners-Google
+Disallow: 
 
-Disallow:
+User-agent: *
+Disallow: /search
+Allow: /
 
 Sitemap: https://freetasbihcounter.online/sitemap.xml
